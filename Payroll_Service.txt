@@ -24,3 +24,25 @@ mysql> show databases;
 mysql> use payroll_service1;
 Database changed
 *********************************************************************************************************************************
+/*UC2*/
+
+mysql> create table employee_payroll
+    -> (id int PRIMARY KEY AUTO_INCREMENT,
+    -> name varchar(150),
+    -> salary int,
+    -> start_date DATE
+    -> );
+Query OK, 0 rows affected (0.23 sec)
+
+mysql> describe employee_payroll;
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| id         | int          | NO   | PRI | NULL    | auto_increment |
+| name       | varchar(150) | YES  |     | NULL    |                |
+| salary     | int          | YES  |     | NULL    |                |
+| start_date | date         | YES  |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.04 sec)
+***********************************************************************************************************************************
+
