@@ -1,0 +1,26 @@
+/*UC1*/
+
+mysql> create database payroll_service1;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> show databases;
++---------------------+
+| Database            |
++---------------------+
+| addressbook_service |
+| information_schema  |
+| mysql               |
+| payroll_service     |
+| payroll_service1    |
+| performance_schema  |
+| sakila              |
+| sampledatabase1     |
+| sampledatabase2     |
+| sys                 |
+| world               |
++---------------------+
+11 rows in set (0.00 sec)
+
+mysql> use payroll_service1;
+Database changed
+*********************************************************************************************************************************
